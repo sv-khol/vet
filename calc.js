@@ -32,7 +32,7 @@ document.forms['inject'].onsubmit = function (event) {
     let final = col / (Number(prep_doz.value) * k)
 
     let rez = this.querySelector('.rez')
-    rez.innerHTML = `для однократного введения надо набрать ${final} мл препарата ${prep_name.value}`
+    rez.innerHTML = `для однократного введения надо набрать ${final.toFixed(2)} мл препарата ${prep_name.value}`
 
 }
 
@@ -74,7 +74,7 @@ document.forms['infuzo'].onsubmit = function (event) {
     let final = col / (Number(prep_doz.value) * k)
 
     let rez = this.querySelector('.rez')
-    rez.innerHTML = `для введения препарата ${prep_name.value} в течение ${period.value} часов надо набрать ${final} мл `
+    rez.innerHTML = `для введения препарата ${prep_name.value} в течение ${period.value} часов надо набрать ${final.toFixed(2)} мл `
 }
 
 document.forms['razved'].onsubmit = function (event) {
@@ -113,6 +113,6 @@ document.forms['razved'].onsubmit = function (event) {
     let final = col / (Number(prep_doz.value) * k / Number(fluid.value))
 
     let rez = this.querySelector('.rez')
-    rez.innerHTML = `для однократного введения надо набрать ${final} мл препарата ${prep_name.value}`
+    rez.innerHTML = `для однократного введения надо набрать ${final.toFixed(2)} мл препарата ${prep_name.value}`
 
 }
