@@ -1,0 +1,40 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.line {
+    display: block;
+    margin: 15px 0;
+}
+
+label span {
+    display: inline-block;
+    width: 120px;
+}
+
+input {
+    width: 70px;
+}
+
+.vars {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.var {
+    border: 1px solid black;
+    padding: 15px;
+    min-width: 370px;
+    max-width: 500px;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+.rez {
+    font-size: 16px;
+    font-weight: bold;
+}

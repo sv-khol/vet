@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расчет доз препаратов</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Расчет доз препаратов</h1>
+    <div class="vars">
+        <div class="var">
+            <h2>Однократный прием / инъекция</h2>
+            <form action="" id="inject">
+                <label><span> препарат: </span><input class="prep_name" type="text"></label>
+                <div class="line">
+                    <label><span>форма выпуска: </span><input class="prep_doz" type="text"></label>
+                    <select name="" class="prep_izm">
+                        <option value="mg_ml">mg/ml</option>
+                        <option value="mkg">mkg/ml</option>
+                        <option value="ed">ed/ml</option>
+                        <!-- <option value="mg">mg</option>
+                        <option value="gr">gr</option>
+                        <option value="ml">ml</option> -->
+                    </select>
+                </div>
+
+                <label><span>вес животного: </span><input class="animal_weight" type="text"> кг</label>
+                <div class="line">
+                    <label><span>дозировка: </span><input class="animal_doz" type="text"></label>
+                    <select name="" class="animal_doz_izm">
+                        <option value="mg">mg/kg</option>
+                        <option value="mkg">mkg/kg</option>
+                        <option value="ed">ed/kg</option>
+                        <option value="gr">gr/kg</option>
+                        <option value="ml">ml/kg</option>
+                    </select>
+                </div>
+
+                <button type="submit">Calc</button>
+                <p class="rez"></p>
+            </form>
+        </div>
+        <div class="var">
+            <h2>инфузомат</h2>
+            <form action="" id="infuzo">
+                <label><span>препарат: </span><input class="prep_name" type="text"></label>
+                <div class="line">
+                    <label><span>форма выпуска: </span><input class="prep_doz" type="text"></label>
+                    <select name="" class="prep_izm">
+                        <option value="mg_ml">mg/ml</option>
+                        <option value="mkg">mkg/ml</option>
+                        <option value="ed">ed/ml</option>
+                    </select>
+                </div>
+
+                <label class="line"><span>вес животного: </span><input class="animal_weight" type="text"> кг</label>
+                <div class="line">
+                    <label><span>дозировка: </span><input class="animal_doz" type="text"></label>
+                    <select name="" class="animal_doz_izm">
+                        <option value="mg">mg/kg</option>
+                        <option value="mkg">mkg/kg</option>
+                        <option value="ed">ed/kg</option>
+                        <option value="gr">gr/kg</option>
+                        <option value="ml">ml/kg</option>
+                    </select>
+                    <select name="" class="in_time">
+                        <option value="1">в час</option>
+                        <option value="60">в мин</option>
+                    </select>
+                </div>
+                <label><span>кол-во часов: </span><input class="period" type="text"></label>
+
+                <button type="submit">Calc</button>
+                <p class="rez"></p>
+            </form>
+        </div>
+        <div class="var">
+            <h2>расчет разведения порошков</h2>
+            <form action="" id="razved">
+                <label><span>препарат:</span> <input class="prep_name" type="text"></label>
+                <div class="line">
+                    <label><span>форма выпуска: </span><input class="prep_doz" type="text"></label>
+                    <select name="" class="prep_izm">
+                        <option value="gr">gr</option>
+                        <option value="mg">mg</option>
+                        <option value="mkg">mkg</option>
+                    </select>
+
+                </div>
+                <label><span>жидкость (NaCl): </span><input class="fluid" type="text"> ml</label>
+                <label class="line"><span>вес животного: </span><input class="animal_weight" type="text"> кг</label>
+                <div class="line">
+                    <label><span>дозировка: </span><input class="animal_doz" type="text"></label>
+                    <select name="" class="animal_doz_izm">
+                        <option value="mg">mg/kg</option>
+                        <option value="mkg">mkg/kg</option>
+                        <option value="gr">gr/kg</option>
+                    </select>
+                </div>
+
+                <button type="submit">Calc</button>
+                <p class="rez"></p>
+            </form>
+        </div>
+        <div class="var">
+            <h2>расчет времени инфузии</h2>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
