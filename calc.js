@@ -60,12 +60,6 @@ document.forms['tabs'].onsubmit = function (event) {
     let col = Number(animal_weight) * Number(animal_doz)
     console.log('общ кол -во препарата col: ', col, animal_doz_izm)
 
-    if (prep_izm == "proc") {
-        prep_doz = prep_doz * 10
-        prep_izm = "mg_ml"
-        console.log('% -> mg/ml: ', prep_doz, prep_izm)
-    }
-
     let k = 1
     if ((prep_izm == "mg_ml") && (animal_doz_izm == "mkg")) {
         k = 1000
@@ -79,7 +73,7 @@ document.forms['tabs'].onsubmit = function (event) {
     let final = col / (Number(prep_doz) * k)
 
     let rez = this.querySelector('.rez')
-    rez.innerHTML = `для однократного введения надо набрать ${final.toFixed(2)} мл препарата ${prep_name}`
+    rez.innerHTML = `для однократного приема надо взять ${final.toFixed(2)} часть капсулы/таблетки ${prep_name}`
 
 }
 
