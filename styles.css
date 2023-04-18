@@ -4,11 +4,6 @@ body {
     font-size: 12px;
 }
 
-.line {
-    display: block;
-    margin: 15px 0;
-}
-
 label span {
     display: inline-block;
     width: 120px;
@@ -35,7 +30,24 @@ input {
     box-sizing: border-box;
 }
 
+form {
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    padding: 7px;
+    width: 150px;
+}
+
 .rez {
     font-size: 16px;
     font-weight: bold;
+
+}
+
+.small {
+    font-size: 10px;
 }
