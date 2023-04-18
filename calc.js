@@ -16,7 +16,7 @@ document.forms['inject'].onsubmit = function (event) {
     console.log('animal_doz_izm: ', animal_doz_izm)
 
     let col = Number(animal_weight) * Number(animal_doz)
-    console.log('col: ', col, animal_doz_izm)
+    console.log('общ кол -во препарата col: ', col, animal_doz_izm)
 
     if (prep_izm == "proc") {
         prep_doz = prep_doz * 10
