@@ -20,8 +20,8 @@
                     <label><span>форма выпуска: </span><input class="prep_doz" type="text"></label>
                     <select name="" class="prep_izm">
                         <option value="mg_ml">МГ/мл</option>
-                        <option value="mkg">МкГ/мл</option>
-                        <option value="ed">ЕД/мл</option>
+                        <option value="mkg_ml">МкГ/мл</option>
+                        <option value="ed_ml">ЕД/мл</option>
                         <option value="proc">%</option>
                         <!-- <option value="mg">mg</option>
                         <option value="gr">gr</option>
@@ -106,6 +106,40 @@
                 </div>
 
                 <button type="submit">Расчет</button>
+                <p class="rez"></p>
+            </form>
+        </div>
+        <div class="var">
+            <h2>Однократный прием / таблетки, капсулы</h2>
+            <form action="" id="tabs">
+                <label><span> препарат: </span><input class="prep_name" type="text" disabled></label>
+                <div class="line">
+                    <label><span>форма выпуска: </span><input class="prep_doz" type="text"></label>
+                    <select name="" class="prep_izm">
+                        <option value="mg">МГ</option>
+                        <option value="mkg">МкГ</option>
+                        <option value="ed">ЕД/мл</option>
+                        <option value="proc">%</option>
+                        <!-- <option value="mg">mg</option>
+                        <option value="gr">gr</option>
+                        <option value="ml">ml</option> -->
+                    </select>
+                </div>
+
+                <label><span>вес животного: </span><input class="animal_weight" type="text"> кг</label>
+                <div class="line">
+                    <label><span>дозировка: </span><input class="animal_doz" type="text"></label>
+                    <select name="" class="animal_doz_izm">
+                        <option value="mg">МГ/кг</option>
+                        <option value="mkg">МкГ/кг</option>
+                        <option value="ed">ЕД/кгg</option>
+                        <option value="gr">гр/кг</option>
+                        <option value="ml">мл/кг</option>
+                    </select>
+                </div>
+
+                <button type="submit">Расчет</button>
+                <!-- <button type="reset">Сброс</button> -->
                 <p class="rez"></p>
             </form>
         </div>
